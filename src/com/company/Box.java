@@ -5,7 +5,6 @@ public class Box {
     private double length;
     private double width;
     private double height;
-    private String colour;
     private String material;
 
   public   Box(double length, double width, double height){
@@ -14,9 +13,8 @@ public class Box {
         this.height = height;
     }
 
-   public Box(double length, double width, double height, String colour, String material){
+   public Box(double length, double width, double height, String material){
         this(length, width, height);
-        this.colour = colour;
         this.material = material;
 
     }
@@ -34,9 +32,7 @@ public class Box {
         return height;
     }
 
-    public String getColour() {
-        return colour;
-    }
+
 
     public String getMaterial() {
         return material;
@@ -75,9 +71,7 @@ public class Box {
         }
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
+
 
     public void setMaterial(String material) {
         this.material = material;
