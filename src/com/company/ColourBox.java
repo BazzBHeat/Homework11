@@ -15,4 +15,15 @@ public class ColourBox extends Box{
     public void setColour(String colour) {
         this.colour = colour;
     }
-}
+
+    @Override
+    public String toString(){
+        StringBuilder result = new StringBuilder();
+
+        result.append(super.toString()).append(", colour = ").append(colour);
+        return result.toString();
+   }
+
+
+    }
+

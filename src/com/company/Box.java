@@ -5,7 +5,7 @@ public class Box {
     private double length;
     private double width;
     private double height;
-    private String material;
+    private String material = "default";
 
   public   Box(double length, double width, double height){
         this.length = length;
@@ -79,5 +79,16 @@ public class Box {
 
     public double volume() {
         return (length * width * height);
+    }
+
+    @Override
+    public String toString(){
+      StringBuilder result = new StringBuilder();
+
+      result.append("leangth = ").append(length)
+              .append(", width= ").append(width)
+              .append(", height = ").append(height)
+              .append(", material = ").append(material);
+    return result.toString();
     }
 }

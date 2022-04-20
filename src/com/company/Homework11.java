@@ -13,11 +13,16 @@ public class Homework11 {
     Box box5 = new Box(50,60,70);
     Box box6 = new Box(1,1,1,"Steel");
     ColourBox box7 = new ColourBox(1,1,1, c.name(), m.name());
+
         System.out.println("Объём коробки 1 = " + box1.volume());
         System.out.println("Объём коробки 2 = " + box2.volume());
         System.out.println("Объём коробки 3 = " + box3.volume());
         System.out.println("Объём коробки 4 = " + box4.volume());
         System.out.println("Объём коробки 5 = " + box5.volume());
         System.out.println("This box is " + box7.getColour() + " and made of " + box7.getMaterial());
+
+        System.out.println(box1.toString());
+        System.out.println(box6.toString());
+        System.out.println(box7.toString());
     }
 }
