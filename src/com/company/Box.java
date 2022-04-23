@@ -8,6 +8,9 @@ public class Box {
     private String material = "default";
 
   public   Box(double length, double width, double height){
+      if (length <= 0 || width <= 0 || height <= 0){
+          throw new IllegalArgumentException("Неправильный размер коробки");
+      }
         this.length = length;
         this.width = width;
         this.height = height;
